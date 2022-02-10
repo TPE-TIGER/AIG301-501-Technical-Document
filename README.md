@@ -11,7 +11,7 @@
 4. Setup X.509 mutual authentication OTA upgrade process on ThingsPro Edge.
 
 ### Control & Maangement TPE from Cloud
-1. Invoke TPE2 Restful API from Azure/AWS/MQTT Broker
+1. [Invoke ThingsPro Edge Restful API from MQTT Server](https://github.com/TPE-TIGER/TPE2-Technical-Document/blob/main/documents/Invoke%20ThingsPro%20Edge%20Restful%20API%20from%20MQTT%20Server.md)
 
 
 
