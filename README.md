@@ -9,3 +9,9 @@
 2. [Build ThingsPro Edge OTA Upgrade Pack for MPKG Applicaiton](https://github.com/TPE-TIGER/TPE2-Technical-Document/blob/main/documents/Build%20ThingsPro%20Edge%20OTA%20Upgrade%20Pack%20for%20MPKG%20application.md)
 3. Deploy ThingsPro Edge OTA upgrade pack from Cloud
 4. Setup X.509 mutual authentication OTA upgrade process on ThingsPro Edge.
+
+### Control & Maangement TPE from Cloud
+1. Invoke TPE2 Restful API from Azure/AWS/MQTT Broker
+
+
+
