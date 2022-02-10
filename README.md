@@ -1,4 +1,4 @@
-# TPE-Technical-Document
+# TPE2-Technical-Document
 
 ### Secured IIoT Gateway
 1. Enforce Secured Setting on Debian OS
