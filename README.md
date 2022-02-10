@@ -4,7 +4,6 @@
 1. Enforce Secured Setting on Debian OS
 2. Enforce Secured Setting on ThingsPro Edge
 
-
 ### OTA Upgrade
 1. [Build ThingsPro Edge OTA Upgrade Pack for Deb Packages](https://github.com/TPE-TIGER/TPE-Technical-Document/blob/main/documents/Build%20ThingsPro%20Edge%20OTA%20Upgrade%20Pack%20for%20Deb%20Packages.md)
 2. Build ThingsPro Edge OTA Upgrade Pack for MPKG applicaiton
