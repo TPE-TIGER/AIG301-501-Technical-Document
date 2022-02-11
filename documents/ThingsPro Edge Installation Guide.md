@@ -121,7 +121,7 @@ Open browser on laptop/PC, and connect to ThingsPro Edge Web Admin: https://192.
 
 It is expect that browser shows below TLS/SSL warning message, due to ThingsPro Edge Web Admin present a untrusted X.509 certificate. There are some ways to solve this issue, but, please skip this warning and go ahead this moment.
 
-<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/SSL_Warning.JPG" width="48" />
+<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/SSL_Warning.JPG" width="250" />
 
 
 
@@ -129,7 +129,7 @@ It is expect that browser shows below TLS/SSL warning message, due to ThingsPro 
 
 On login page, please **read end-user license agreement**, and input default userID and password afterward.
 
-<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/login.JPG" style="zoom:50%;" />
+<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/login.JPG" width="250" />
 
 
 
@@ -137,7 +137,7 @@ On login page, please **read end-user license agreement**, and input default use
 
 
 
-<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/after-login.JPG" style="zoom:50%;" />
+<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/after-login.JPG" width="250" />
 
 
 
