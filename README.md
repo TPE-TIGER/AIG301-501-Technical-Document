@@ -2,7 +2,7 @@
 
 ### ThingsPro Edge Software Release & Download
 
-1. [ThingsPro Edge Software Release & Download](https://github.com/TPE-TIGER/TPE2-Technical-Document/blob/main/documents/Build%20ThingsPro%20Edge%20OTA%20Upgrade%20Pack%20for%20MPKG%20application.md)
+1. [ThingsPro Edge Software Release & Download](https://github.com/TPE-TIGER/TPE2-Technical-Document/blob/main/documents/ThingsPro%20Edge%20Software%20Release.md)
 2. Installation Guide
 
 ### Secured IIoT Gateway
