@@ -129,7 +129,7 @@ It is expect that browser shows below TLS/SSL warning message, due to ThingsPro 
 
 On login page, please **read end-user license agreement**, and input default userID and password afterward.
 
-<div style="text-align:center"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/login.JPG" width="480" /></div>
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/login.JPG" width="480" /></p>
 
 
 
@@ -137,7 +137,7 @@ On login page, please **read end-user license agreement**, and input default use
 
 
 
-<div style="text-align:center"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/after-login.JPG" width="480" /></div>
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/after-login.JPG" width="480" /></p>
 
 
 
