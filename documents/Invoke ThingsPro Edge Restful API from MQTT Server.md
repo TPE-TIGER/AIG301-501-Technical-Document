@@ -33,14 +33,12 @@ On ThingsPro Edge MQTT client setting page, you shall
 - Define name of "Out Topic". MQTT client will send out message (API Response) on this topic.
 
   
-
-<img src="https://thingspro.blob.core.windows.net/resource/document/mqtt/mqtt-dm.jpg" style="zoom:50%;" />
-
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/mqtt/mqtt-dm.jpg" width="960" /></p>
 
 
 - By above configuration, MQTT client created 2 MQTT topics with MQTT Server, and expect to receive API request on **topic:/devices/1/request**
 
-  <img src="https://thingspro.blob.core.windows.net/resource/document/mqtt/mqtt-dm2.jpg" style="zoom:20%;" />
+   <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/mqtt/mqtt-dm2.jpg" width="640" /></p>
 
 
 
