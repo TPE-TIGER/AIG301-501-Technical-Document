@@ -62,7 +62,7 @@ System time is widely used in security related actions, such as certificate vali
 
 If, for some reason, the user decides to leave https service enabled in the field, it's recommended to import your own certificate and private key for the HTTPS service, so user's working laptop can successfully validate the identity of the gateway.
 
-The HTTPS service on ThingsPro Edge comes with a set of self-signed certificate and private key by default. If the user is not able to replace them with your own certificate and private key, we recommend the user to export the default root certificate from ThingsPro Edge and add it to the trusted root certificate authority list on your working laptop.
+The HTTPS service on ThingsPro Edge comes with a set of self-signed certificate and private key by default. If the user is not able to replace the default with your own certificate and private key, we recommend the user to export the default root certificate from ThingsPro Edge and add it to the trusted root certificate authority list on your working laptop.
 
 #### 3.3 Firewall
 
