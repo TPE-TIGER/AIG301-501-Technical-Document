@@ -8,21 +8,21 @@ Document Version: V1.0
 | ------- | ---------- | ----------------- |
 | 1.0     | 2022-02-18 | document created. |
 
-### 1. Purpose
+### Purpose
 
 This document lists out the recommended actions to be taken in ThingsPro Edge before deplyments, to secure IIoT gateways in the field.
 
 ---
 
-### 1.1 Manage Roles and Users
+### 1. Manage Roles and Users
 
 The user should be aware that information containing the default account and password is publically available to everyone, and thus it should only be used for the purpose of installation.
 
-#### 1.2 Create New Roles and Users
+#### 1.1 Create New Roles and Users
 
 It's recommended to create new user accounts for each individual with adequate permissions. In ThingsPro Edge, permissions can be grouped as roles, then further assigned to user accounts. 
 
-#### 1.3 Disable or Change the Password for Default Account
+#### 1.2 Disable or Change the Password for Default Account
 
 Once user accounts have been created, user should either remove the default account, or change the default password of it. 
 
