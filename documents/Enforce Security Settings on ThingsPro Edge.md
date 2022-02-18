@@ -6,7 +6,7 @@ Document Version: V1.0
 
 | Version | Date       | Content           |
 | ------- | ---------- | ----------------- |
-| 1.0     | 2022-02    | document created. |
+| 1.0     | 2022-02-18 | document created. |
 
 ### 1. Purpose
 
