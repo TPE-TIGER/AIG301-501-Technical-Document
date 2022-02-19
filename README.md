@@ -3,7 +3,7 @@
 ### ThingsPro Edge Software Release & Download
 
 1. [ThingsPro Edge Software Release & Download](./documents/ThingsPro%20Edge%20Software%20Release.md)
-2. [Installation Guide](./documents/ThingsPro%20Edge%20Installation%20Guide.md) 
+2. [ThingsPro Edge Installation Guide](./documents/ThingsPro%20Edge%20Installation%20Guide.md) 
 
 ### Secured IIoT Gateway
 
