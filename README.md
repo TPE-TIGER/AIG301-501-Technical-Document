@@ -3,7 +3,7 @@
 ### ThingsPro Edge Software Release & Download
 
 1. [ThingsPro Edge Software Release & Download](./documents/ThingsPro%20Edge%20Software%20Release.md)
-2. [Installation Guide](./documents/ThingsPro%20Edge%20Installation%20Guide.md) 
+2. [ThingsPro Edge Installation Guide](./documents/ThingsPro%20Edge%20Installation%20Guide.md) 
 
 ### Secured IIoT Gateway
 
@@ -18,6 +18,9 @@
 
 ### Control & Management TPE from Cloud
 1. [Invoke ThingsPro Edge Restful API from MQTT Server](./documents/Invoke%20ThingsPro%20Edge%20Restful%20API%20from%20MQTT%20Server.md)
+
+### Azure IoT Edge
+1. [thingspro-agent Release & Configuration] ()
 
 
 
