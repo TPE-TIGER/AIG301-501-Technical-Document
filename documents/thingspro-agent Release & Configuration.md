@@ -20,4 +20,4 @@ Document Version: 1.0
 
 ##### Related documents：
 
-- [ThingsPro Edge Software Release & Download](ThingsPro Edge Software Release.md)
+- [ThingsPro Edge Software Release & Download](ThingsPro%20Edge%20Software%20Release.md)
