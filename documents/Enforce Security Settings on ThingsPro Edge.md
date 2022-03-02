@@ -33,8 +33,7 @@ Once user accounts have been created, user should either remove the default acco
 The user should disable unused interfaces to prevent unexpected access to the gateway.
 
 > Note: The user must realize that although the gateway has become more secured by disabling unused interfaces, the tradeoff is it's resilience because the backup options to access the gateway have been disabled.
-
-![](https://thingspro.blob.core.windows.net/resource/document/tpe/serviceEnable.JPG)
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/serviceEnable.JPG" width="600" /></p>
 
 #### 2.1 Network
 
@@ -104,13 +103,13 @@ Review firewall inbound policy, ensure only necessary and recognized service/por
 
 ThingsPro Edge exposes only the 8443 port for HTTPS service.
 
-![](https://thingspro.blob.core.windows.net/resource/document/tpe/Firewall.JPG)
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/Firewall.JPG" width="860" /></p>
 
 #### 3.4 System Log and Event Log - Storage Setting
 
 ThingsPro Edge apply system log and event log storage size by 100 MB. Review it and adjust the policy according to your requirement, in case lost important log data.
 
-![](https://thingspro.blob.core.windows.net/resource/document/tpe/systemlogsize.JPG)
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/systemlogsize.JPG" width="480" /></p>
 
 #### 
 
@@ -126,4 +125,4 @@ ThingsPro Edge offers cloud applications all support X.509 certificate base auth
 
 Always consider uses X.509 certificate base authentication on your production environment. 
 
-![](https://thingspro.blob.core.windows.net/resource/document/tpe/x509.JPG)
+<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/x509.JPG" width="480" /></p>
