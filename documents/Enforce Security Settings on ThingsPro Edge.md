@@ -10,7 +10,7 @@ Document Version: V1.1
 
 ### Purpose
 
-This document lists out the recommended actions to be taken in ThingsPro Edge before deplyments, to secure IIoT gateways in the field.
+This document lists out the recommended actions to be taken in ThingsPro Edge before deployments, to secure IIoT gateways in the field.
 
 ---
 
