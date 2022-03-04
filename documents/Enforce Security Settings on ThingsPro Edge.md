@@ -114,6 +114,6 @@ All the cloud applications in ThingsPro Edge supports X.509 certificate based au
 - MQTT Client
 - Sparkplug
 
-Please always consider useing X.509 certificate based authentication in production.
+Please always consider using X.509 certificate based authentication in production.
 
 <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/x509.JPG" width="480" /></p>
