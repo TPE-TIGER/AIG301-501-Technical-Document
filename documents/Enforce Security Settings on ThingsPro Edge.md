@@ -28,6 +28,7 @@ Once user accounts have been created, user should either remove the default acco
 
 > Note: To avoid from being unintentionallty locked out from the gateway, ThingsPro Edge does not allow the last user account assigned administrator role to be removed.
 
+
 ### 2. Disable Unused Interfaces
 
 The user should disable unused interfaces to prevent unexpected access to the gateway.
@@ -37,21 +38,12 @@ The user should disable unused interfaces to prevent unexpected access to the ga
 
 #### 2.1 Network
 
-##### 2.1.1 Cellular
+Validate the network interface settings and disable the unused ones.
 
-Switch Cellular off, if not the use case on your IIoT application.
-
-##### 2.1.2 DHCP Server
-
-Switch DHCP Server off, if not the use case on your IIoT application.
-
-##### 2.1.3 LAN
-
-Switch unused LAN port (such as LAN2) off, if not the use case on your IIoT application.
-
-##### 2.1.4 Wi-Fi
-
-Switch Wi-Fi off, if not the use case on your IIoT application.
+- Cellular
+- DHCP Server
+- LAN
+- Wi-Fi
 
 #### 2.2 Service
 
@@ -79,7 +71,7 @@ ThingsPro Edge disables SSH server by default. It's common that the user may ena
 
 ##### 2.3.1 ThingsPro Proxy
 
-ThingsPro Edge support auto provisioning by ThingsPro Proxy which requires ThingsPro Edge to open discovery service. Please disable it after device be provisioning.
+ThingsPro Edge support auto provisioning by ThingsPro Proxy, which requires ThingsPro Edge to open a port for device discovery. Please disable it after the device has been provisioned.
 
 
 
@@ -97,25 +89,24 @@ If, for some reason, the user decides to leave https service enabled in the fiel
 
 The HTTPS service on ThingsPro Edge comes with a set of self-signed certificate and private key by default. If the user is not able to replace the default with your own certificate and private key, we recommend the user to export the default root certificate from ThingsPro Edge and add it to the trusted root certificate authority list on your working laptop.
 
-#### 3.3 Firewall - Review inbound policy
+#### 3.3 Firewall - Review the inbound policy
 
-Review firewall inbound policy, ensure only necessary and recognized service/ports on inbound while list.
+- Review the firewall inbound policy and ensure that only the necessary/recognized service/ports are listed in the inbound allowed list.
 
-ThingsPro Edge exposes only the 8443 port for HTTPS service.
+- ThingsPro Edge exposes only the 8443 port for HTTPS service by default.
 
-<p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/Firewall.JPG" width="860" /></p>
+  <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/Firewall.JPG" width="860" /></p>
 
-#### 3.4 System Log and Event Log - Storage Setting
+#### 3.4 System Log - Storage Setting
 
-ThingsPro Edge apply system log and event log storage size by 100 MB. Review it and adjust the policy according to your requirement, in case lost important log data.
+The default storage size for keeping system logs is 100 Mb. The user should adjust the setting based on the application's need.
 
 <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/systemlogsize.JPG" width="480" /></p>
 
-#### 
 
 ### 4. X.509 Certificate based Mutual Authentication
 
-ThingsPro Edge offers cloud applications all support X.509 certificate base authentication, including:
+All the cloud applications in ThingsPro Edge supports X.509 certificate based authentication, including:
 
 - Azure IoT Edge
 - Azure IoT Device
@@ -123,6 +114,6 @@ ThingsPro Edge offers cloud applications all support X.509 certificate base auth
 - MQTT Client
 - Sparkplug
 
-Always consider uses X.509 certificate base authentication on your production environment. 
+Please always consider useing X.509 certificate based authentication in production.
 
 <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/tpe/x509.JPG" width="480" /></p>
