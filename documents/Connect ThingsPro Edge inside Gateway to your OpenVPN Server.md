@@ -1,4 +1,4 @@
-# Connect ThingsPro Edge inside Gateway to your OpenVPN Server
+# Connect "ThingsPro Edge inside" Gateway to your OpenVPN Server
 
 Document Version: 1.0
 
