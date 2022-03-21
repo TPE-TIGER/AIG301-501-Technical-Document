@@ -16,8 +16,9 @@
 3. Deploy ThingsPro Edge OTA upgrade pack from Cloud
 4. Setup X.509 mutual authentication OTA upgrade process on ThingsPro Edge.
 
-### Control & Management TPE from Cloud
+### Remote Management and Connection
 1. [Invoke ThingsPro Edge Restful API from MQTT Server](./documents/Invoke%20ThingsPro%20Edge%20Restful%20API%20from%20MQTT%20Server.md)
+1. [Connect ThingsPro Edge inside Gateway to your OpenVPN Server](./documents/Invoke%20ThingsPro%20Edge%20Restful%20API%20from%20MQTT%20Server.md)
 
 ### Azure IoT Edge
 1. [thingspro-agent Release & Configuration](./documents/thingspro-agent%20Release%20&%20Configuration.md)
