@@ -7,7 +7,7 @@
 
 ### Secured IIoT Gateway
 
-1. Enforce Security Settings on Debian OS
+1. [Enforce Security Settings on Debian OS](./documents/Enforce%20Security%20Settings%20on%20Debian%20OS.md)
 2. [Enforce Security Settings on ThingsPro Edge](./documents/Enforce%20Security%20Settings%20on%20ThingsPro%20Edge.md)
 
 ### OTA Upgrade
