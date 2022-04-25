@@ -16,7 +16,7 @@ This document lists out the recommended actions to be taken in Debian OS before 
 
 ### 1. Secured User Access
 
-All Moxa's industrial conputers share the same default username and password, which is publically accessible to everyone vis the user manual and should be disabled before deployments. We encourge users to secure your system by creating new accounts and remove the default, while making sure that suitable password complexity is applied, or even consider introducing PAM (Pluggable Authentication Modules) to the system.
+All Moxa's industrial conputers share the same default username and password, which is publically available to everyone ib the user manual and should be disabled before deployments. We encourge users to secure your system by creating new accounts and remove the default one, while making sure that suitable password complexity is applied, or even consider introducing PAM (Pluggable Authentication Modules) to the system.
 
 ### 2. SSH Settings
 
