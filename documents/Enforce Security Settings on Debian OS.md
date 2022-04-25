@@ -10,7 +10,7 @@ Document Version: V1.0
 
 ### Purpose
 
-This document lists out the recommended actions to be taken in Debian OS before deployments, to further secure IIoT gateways running that are runnning ThingsPro Edge in the field.
+This document lists out the recommended actions to be taken in Debian OS before deployments, to further secure IIoT gateways that are runnning ThingsPro Edge in the field.
 
 ---
 
