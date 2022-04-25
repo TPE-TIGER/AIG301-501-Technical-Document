@@ -75,6 +75,34 @@ chmod 755 tpedm-install.sh
 
 
 
+# Operation Tips...
+
+**Start / Stop EMQX**
+
+```
+docker start/stop dm_emqx
+```
+
+
+
+**Start/Stop Database**
+
+```
+docker start/stop dm_database
+```
+
+
+
+**Start/Stop Web App**
+
+```
+docker start/stop dm_web
+```
+
+
+
+
+
 # For Developers...
 
 ##### License
