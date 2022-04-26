@@ -30,7 +30,7 @@ ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker
 
 **Docker engine**：Docker version 20.10.14, build a224086
 
-
+**Python 3 (host)**：3.8+
 
 # Download and Run Installation Script
 
