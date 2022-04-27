@@ -28,7 +28,8 @@ ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker
 
 | Linux                     | Docker Engine                          | Python3 (host) |
 | ------------------------- | -------------------------------------- | -------------- |
-| Ubuntu Server 20.04 (LTS) | 20.10.14, build a224086 or up to dated | 3.8+           |
+| Ubuntu Server 21.10  | 20.10.14, build a224086 or up to dated | 3.9+           |
+| Ubuntu Server 20.04  | 20.10.14, build a224086 or up to dated | 3.8+           |
 | Debian 11.3.0             | 20.10.14, build a224086 or up to dated | 3.9+           |
 
 
