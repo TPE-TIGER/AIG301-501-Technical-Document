@@ -26,10 +26,12 @@ TPEDM is reference architecture for customer self-host device management applica
 
 ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker engine. TPEDM doesn't limit on any Linux distribution nor Docker engine version, however, installation script is base on Debian's packages and commands, suggest go for below configuration that we verified already.
 
-| Linux                 | Docker Engine                           | Python3 (host)      |
-| ---------------------- | ------------------------------------------------------------ |
-| Ubuntu Server 20.04 (LTS) | 20.10.14, build a224086 or up to dated | 3.8+ |
-| Debian 11.3.0 | 20.10.14, build a224086 or up to dated |  3.9+                    |
+| Linux                     | Docker Engine                          | Python3 (host) |
+| ------------------------- | -------------------------------------- | -------------- |
+| Ubuntu Server 20.04 (LTS) | 20.10.14, build a224086 or up to dated | 3.8+           |
+| Debian 11.3.0             | 20.10.14, build a224086 or up to dated | 3.9+           |
+
+
 
 
 # Download and Run Installation Script
