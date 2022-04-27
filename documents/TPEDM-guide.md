@@ -24,7 +24,7 @@ TPEDM is reference architecture for customer self-host device management applica
 
 # Linux and Docker Engine
 
-ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker engine. TPEDM doesn't limit on any Linux distribution nor Docker engine version, however, installation script is base on Debian's packages and commands, suggest go for below configuration that we verified already.
+ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker engine. TPEDM doesn't limit on any Linux distribution nor Docker engine version, however, installation script is base on Debian's packages and commands, we suggest go for below configuration that verified already.
 
 | Linux                     | Docker Engine                          | Python3 (host) |
 | ------------------------- | -------------------------------------- | -------------- |
@@ -204,7 +204,7 @@ docker start/stop dm_web
 
 ##### Scalability and Performance
 
-​	You shall consider to deploy a scalability and high performance production environment.
+​	You shall consider to deploy a scalabile and high performance production environment.
 
 1. Clustering MQTT Broker (https://www.emqx.io/docs/en/v4.3/advanced/cluster.html#distributed-erlang) is good idea to handle mass concurrent devices and come with high availability features.
 2. Separate Web Application web hook API from current dm_web container, and deploy it on a dedicate VM node.
