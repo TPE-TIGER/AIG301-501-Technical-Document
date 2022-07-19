@@ -40,7 +40,7 @@ Periodically upgrading the system with APT command is a good practice to ensure 
 
 ### 7. Third-Party Software
 
-Users must understand that installing third-party software on a deployed unit is a high risk action which may cause unexpected result. We do not recommend users to do so without thoroughly tested in the lab and the responsibility of validating the software falls on the users.
+Users must understand that installing third-party software on a deployed unit is a high risk action, which may cause unexpected result. We do not recommend users to do so without thoroughly tested in the lab and the responsibility of validating the software falls on the users.
 
 ### 8. Validate the Hardware Wirings
 
