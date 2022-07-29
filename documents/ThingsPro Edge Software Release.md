@@ -12,6 +12,7 @@ Document Version: 1.2
 
 | Version | Device Models | Download                                                     | Note                                                         |
 | ------- | ------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 2.3.0   | UC-8100       | Full download:<a href="https://tpe2.azureedge.net/update_2.3.0-3571-tpe_armhf.deb">download</a><br />OTA Upgrade: https://tpe2.azureedge.net/package_2.3.0-3571-tpe_armhf.yaml |                                                              |
 | 2.3.0   | UC-3100       | Full download:<a href="https://tpe2.azureedge.net/update_2.3.0-3571-tpe_armhf.deb">download</a><br />OTA Upgrade: https://tpe2.azureedge.net/package_2.3.0-3571-tpe_armhf.yaml |                                                              |
 | 2.3.0   | UC-2100       | Full download:<a href="https://tpe2.azureedge.net/update_2.3.0-3571-tpe_armhf.deb">download</a><br />OTA Upgrade: https://tpe2.azureedge.net/package_2.3.0-3571-tpe_armhf.yaml |                                                              |
 | 2.3.0   | UC-8200       | Full download:<a href="https://tpe2.azureedge.net/update_2.3.0-3571-tpe_armhf.deb">download</a><br />OTA Upgrade: https://tpe2.azureedge.net/package_2.3.0-3571-tpe_armhf.yaml |                                                              |
