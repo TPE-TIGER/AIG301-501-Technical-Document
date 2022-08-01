@@ -23,6 +23,7 @@
 
 ### Azure IoT Edge
 1. [thingspro-agent Release & Configuration](./documents/thingspro-agent%20Release%20&%20Configuration.md)
+1. [Install Ignition Edge on AIG-301](./documents/Install Ignition Edge on AIG-301.md)
 
 ### Other
 1. [Event List](./documents/TPE2-EventList.md) 
