@@ -103,7 +103,7 @@ Above installation and deployment steps be tested and verified on:
 
 | Model   | Version | ThingsPro Edge Version | CPU   |
 | ------- | ------- | ---------------------- | ----- |
-| AIG-301 | 1.3     | 2.3.0                  | arm32 |
+| AIG-301 | 1.3     | 2.2.1                  | arm32 |
 | AIG-301 | 1.2     | 2.2.0                  | arm32 |
 | AIG-501 | 1.0     | 2.2.0                  | x64   |
 
