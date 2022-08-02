@@ -1,12 +1,12 @@
 # Install Ignition Edge on AIG-301
 
-Document Version: V1.0
+Document Version: V1.1
 
 ### Change Log
 
-| Version | Date       | Content           |
-| ------- | ---------- | ----------------- |
-| 1.0     | 2022-08-01 | document created. |
+| Version | Date       | Content                   |
+| ------- | ---------- | ------------------------- |
+| 1.1     | 2022-08-02 | use Ignition edge edition |
 
 ### Purpose
 
@@ -51,6 +51,14 @@ Access to Ignition Edge marketplace: https://azuremarketplace.microsoft.com/en-u
 <img src="https://thingspro.blob.core.windows.net/resource/document/tpe/ignition-marketplace.jpg" style="zoom:80%;" />
 
 Click ***"Get It Now"***, and following each steps to install Ignition Edge module on the IIoT Gateway you desired.
+
+
+
+#### Change Edition from *standard* to *edge*
+
+By update Module Environment Variables, you can change Ignition edition to ***edge***
+
+![](https://thingspro.blob.core.windows.net/resource/document/tpe/ignition-module-edition-edge.jpg)
 
 
 
