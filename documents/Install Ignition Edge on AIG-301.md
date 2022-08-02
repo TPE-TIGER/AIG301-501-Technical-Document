@@ -101,7 +101,11 @@ Depend on network throughput, it take at least 30 min for download and deploy Ig
 
 After Ignition Edge is running, launch Ignition Edge admin web: http://{ip}:8088
 
-<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/ignition-module-web.jpg" style="zoom:67%;" />
+<img src="https://thingspro.blob.core.windows.net/resource/document/tpe/ignition-module-web-1.jpg" style="zoom:70%;" />
+
+A moment later....
+
+![](https://thingspro.blob.core.windows.net/resource/document/tpe/ignition-module-web-2.jpg)
 
 
 
