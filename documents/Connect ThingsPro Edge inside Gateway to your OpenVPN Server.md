@@ -271,3 +271,26 @@ Response Example:
     "message": "Delete config successfully"
 }
 ```
+
+### 3. Troubleshooting
+
+##### 3.1 OpenVPN Version
+
+The client version can be found with the following command. Please make sure not to contain incompetible OpenVPN settings introduced from OpenVPN v2.5+ in our ovpn file.
+
+```
+root@Moxa:/home/moxa# docker exec -it openvpn_app_1 openvpn --version
+OpenVPN 2.4.0 arm-unknown-linux-gnueabihf [SSL (OpenSSL)] [LZO] [LZ4] [EPOLL] [PKCS11] [MH/PKTINFO] [AEAD] built on Oct 14 2018
+library versions: OpenSSL 1.0.2u  20 Dec 2019, LZO 2.08
+Originally developed by James Yonan
+Copyright (C) 2002-2017 OpenVPN Technologies, Inc. <sales@openvpn.net>
+Compile time defines: enable_async_push=no enable_comp_stub=no enable_crypto=yes enable_crypto_ofb_cfb=yes enable_debug=yes enable_def_auth=yes enable_dependency_tracking=no enable_dlopen=unknown enable_dlopen_self=unknown enable_dlopen_self_static=unknown enable_fast_install=yes enable_fragment=yes enable_iproute2=yes enable_libtool_lock=yes enable_lz4=yes enable_lzo=yes enable_maintainer_mode=no enable_management=yes enable_multi=yes enable_multihome=yes enable_pam_dlopen=no enable_password_save=yes enable_pedantic=no enable_pf=yes enable_pkcs11=yes enable_plugin_auth_pam=yes enable_plugin_down_root=yes enable_plugins=yes enable_port_share=yes enable_selinux=no enable_server=yes enable_shared=yes enable_shared_with_static_runtimes=no enable_silent_rules=no enable_small=no enable_static=yes enable_strict=no enable_strict_options=no enable_systemd=yes enable_werror=no enable_win32_dll=yes enable_x509_alt_username=yes with_crypto_library=openssl with_gnu_ld=yes with_mem_check=no with_plugindir='${prefix}/lib/openvpn' with_sysroot=no
+```
+
+##### 3.2 OpenVPN Log
+
+If the OpenVPN client is not working properly, logs can be printed out with the following command.
+
+```
+root@Moxa:/home/moxa# docker exec -it openvpn_app_1 tail -n 100 /var/log/openvpn/openvpn.log
+```
