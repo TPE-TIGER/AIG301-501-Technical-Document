@@ -25,7 +25,7 @@ This document guide you how to deploy a diagnosis module on TPE devices and leve
 
 #### 1.2 Deploy the Module from Azure Portal
 
-- Image URL: frankshli/tpe_diagnosis_module:1.0.1-armhf
+- Image URL: frankshli/tpe_diagnosis_module:1.0.2-armhf
 
 - Container Create Option: 
 
