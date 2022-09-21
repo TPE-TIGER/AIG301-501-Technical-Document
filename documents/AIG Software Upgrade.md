@@ -7,13 +7,22 @@ Document Version: 1.1
 | Version | Date       | Content                         |
 | ------- | ---------- | ------------------------------- |
 | 1.0     | 2022-08-05 | Content Created                 |
-| 1.1     | 2022-09-01 | Add AIG-301 V1.4 & AIG-501 V1.2 |
+| 1.1     | 2022-09-21 | Add AIG-301 V1.4 & AIG-501 V1.2 |
 
 
 
 # AIG-300 Series
 
 ### 
+
+### Upgrade to AIG-301 version 1.4
+
+**Pre-request：AIG-301 version 1.3**
+
+|      | Description                                 | OTA URL                                                      |
+| ---- | ------------------------------------------- | ------------------------------------------------------------ |
+| 1    | Upgrade pack for AIG-301 (IMG 1.3 to 1.4) | https://files.thingsprocloud.com/package/Upgrade_AIG-301_2.3.1-3657_IMG_1.3_to_1.4.deb.yaml |
+
 
 ### Upgrade to AIG-301 version 1.3
 
@@ -38,11 +47,18 @@ Document Version: 1.1
 
 # AIG-500 Series
 
+### Upgrade to AIG-501 version 1.2
+
+**Pre-request：AIG-501 version 1.1**
+
+|      | Description                                 | OTA URL                                                      |
+| ---- | ------------------------------------------- | ------------------------------------------------------------ |
+| 1    | Upgrade pack for AIG-501 (IMG 1.1 to 1.2) | https://files.thingsprocloud.com/package/Upgrade_AIG-501_2.3.1-3658_IMG_1.1_to_1.2.deb.yaml |
 
 
 ### Upgrade to AIG-501 version 1.1
 
-**Pre-request：AIG-301 version 1.0**
+**Pre-request：AIG-501 version 1.0**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
