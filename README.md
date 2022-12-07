@@ -27,8 +27,10 @@
 
 ### Azure IoT Edge
 1. [thingspro-agent Release & Configuration](./documents/thingspro-agent%20Release%20&%20Configuration.md)
-1. [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
+2. [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
 
 ### Other
 1. [Event List](./documents/TPE2-EventList.md) 
-1. [Benchmark & Limitation](./documents/TPE2-Benchmark_Limitation.md) 
+2. [Benchmark & Limitation](./documents/TPE2-Benchmark_Limitation.md) 
+3. [Setup AIG-301 as Child Device - Self-Signed X.509](./documents/Setup%20AIG-301%20as%20Child%20Device%20-%20Self-Sign%20X.509.md)
+4. [Setup AIG-301 as Child Device - Symmentric Key](./documents/Setup%20AIG-301%20as%20Child%20Device%20-%20Symmetric%20Key.md)
