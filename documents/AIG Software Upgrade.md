@@ -7,7 +7,7 @@ Document Version: 1.1
 | Version | Date       | Content                         |
 | ------- | ---------- | ------------------------------- |
 | 1.0     | 2022-08-05 | Content Created                 |
-| 1.1     | 2022-09-22 | Add AIG-301 V1.4 & AIG-501 V1.2 |
+| 1.1     | 2022-09-21 | Add AIG-301 V1.4 & AIG-501 V1.2 |
 
 
 
