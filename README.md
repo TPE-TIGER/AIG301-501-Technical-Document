@@ -10,6 +10,7 @@
 
 1. [Enforce Security Settings on Debian OS](./documents/Enforce%20Security%20Settings%20on%20Debian%20OS.md)
 2. [Enforce Security Settings on ThingsPro Edge](./documents/Enforce%20Security%20Settings%20on%20ThingsPro%20Edge.md)
+3. [AIG Vulnerability Scan Report](.documents/AIG_Vulnerability_Scan_Report.md)
 
 ### OTA Upgrade
 1. [Build ThingsPro Edge OTA Upgrade Pack for Deb Packages](./documents/Build%20ThingsPro%20Edge%20OTA%20Upgrade%20Pack%20for%20Deb%20Packages.md)
