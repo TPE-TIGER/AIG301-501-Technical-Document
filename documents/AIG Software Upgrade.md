@@ -97,7 +97,8 @@ There are couple methods to submit software upgrade command.
 
 ​	Step 2: Start the job, https://docs.moxa.online/tpe/openapi/core#tag/upgrade/paths/~1upgrades~1%7Bid%7D~1%7Baction%7D/put
 
-##### Option 3：By Azure IoT Hub Direct Method Command or AWS IoT Core Job, refer to this <a herf="https://github.com/TPE-TIGER/AIG301-501-Technical-Document/blob/main/documents/Install-Upgrade%20ThingsPro%20Edge%20Application%20from%20Cloud.md">article</a>.
+##### Option 3：By Azure IoT Hub Direct Method Command or AWS IoT Core Job
+Refer to this <a herf="https://github.com/TPE-TIGER/AIG301-501-Technical-Document/blob/main/documents/Install-Upgrade%20ThingsPro%20Edge%20Application%20from%20Cloud.md">article</a>.
 
 
 
