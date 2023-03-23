@@ -1,4 +1,4 @@
-# Enforce Secured Setting on ThingsPro Edge
+# Enforce Secured Setting on Debian OS
 
 Document Version: V1.0
 
