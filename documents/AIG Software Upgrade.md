@@ -73,7 +73,7 @@ Document Version: 1.1
 
 ### 1. How to find versions information on my device?
 
-ThingsPro Edge system overview page displays **Firmware Ver.** and **ThingsPro Ver.** 
+On ThingPro Edge Admin Web, click System Overview page to catch **Firmware Ver.** and **ThingsPro Ver.** 
 
 ![](https://docs.moxa.online/assets/images/Overview_2-b2178d4fd6a59c227b49812cbbb00f18.png)
 
@@ -81,13 +81,13 @@ ThingsPro Edge system overview page displays **Firmware Ver.** and **ThingsPro V
 
 ### 2. Verify Software Upgrade Dependency
 
-Before submit software upgrade command to device, you shall verify the dependency according to this document.
+Before upgrade software, you shall verify the dependency according to this document, and following the upgrade path (1.1 to 1.2, 1.2 to 1.3 and so on)
 
 
 
-### 3. Submit Software Upgrade
+### 3. Software Upgrade
 
-There are couple methods to submit software upgrade commands.
+There are couple methods to submit software upgrade command.
 
 ##### Option 1：By ThingsPro Edge Admin Web (/General Operation/ Software Upgrade)
 
@@ -97,7 +97,7 @@ There are couple methods to submit software upgrade commands.
 
 ​	Step 2: Start the job, https://docs.moxa.online/tpe/openapi/core#tag/upgrade/paths/~1upgrades~1%7Bid%7D~1%7Baction%7D/put
 
-##### Option 3：By Azure IoT Hub Direct Method Command, thingspro-software-upgrade, https://docs.moxa.online/tpe/users-manual/northbound/azure-iotedge/ta_command
+##### Option 3：By Azure IoT Hub Direct Method Command or AWS IoT Core Job, refer to this <a herf="https://github.com/TPE-TIGER/AIG301-501-Technical-Document/blob/main/documents/Install-Upgrade%20ThingsPro%20Edge%20Application%20from%20Cloud.md">article</a>.
 
 
 
