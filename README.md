@@ -25,9 +25,8 @@
 ### Diagnosis
 1. [Deploy an Azure IoT Edge Module for Diagnosis](./documents/Diagnosis%20Azure%20IoT%20Edge%20Module.md)
 
-### Azure IoT Edge
-1. 
-2. [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
+### 3'rd Module on Azure IoT Edge
+1. [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
 
 ### Other
 1. [Event List](./documents/TPE2-EventList.md) 
