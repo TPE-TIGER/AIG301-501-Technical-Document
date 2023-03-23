@@ -1,4 +1,4 @@
-- ##### thingspro-agent Release & Configuration
+# thingspro-agent Release & Configuration
 
   Document Version: 1.2
 
@@ -23,9 +23,5 @@
   | ---------- | ---------------- | ----------------------- | ------------------------------------ | ------------------------------------------------------------ |
   | 1.2        | 1.2.7            | 2.2.3                   | moxa2019/thingspro-agent:2.2.3-amd64 | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.1        | 1.1.4            | 2.2.3                   | moxa2019/thingspro-agent:2.2.3-amd64 | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
-
-  ##### Related documents：
-
-  - [ThingsPro Edge Software Release & Download](https://github.com/TPE-TIGER/TPE2-Technical-Document/blob/main/documents/ThingsPro Edge Software Release.md)
 
 
