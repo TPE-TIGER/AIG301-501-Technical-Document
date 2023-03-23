@@ -1,10 +1,9 @@
-# TPE2-Technical-Document
+# AIG301/501 Technical-Document
 
 ### Software Release & Download
 
-1. [ThingsPro Edge Software Release & Download](./documents/ThingsPro%20Edge%20Software%20Release.md)
-2. [ThingsPro Edge Installation Guide](./documents/ThingsPro%20Edge%20Installation%20Guide.md) 
-2. [AIG Software Release & Upgrade](./documents/AIG%20Software%20Upgrade.md) 
+1. [AIG Software Release & Upgrade](./documents/AIG%20Software%20Upgrade.md) 
+2. [thingspro-agent Release & Configuration](./documents/thingspro-agent%20Release%20&%20Configuration.md)
 
 ### Security
 
@@ -27,7 +26,7 @@
 1. [Deploy an Azure IoT Edge Module for Diagnosis](./documents/Diagnosis%20Azure%20IoT%20Edge%20Module.md)
 
 ### Azure IoT Edge
-1. [thingspro-agent Release & Configuration](./documents/thingspro-agent%20Release%20&%20Configuration.md)
+1. 
 2. [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
 
 ### Other
