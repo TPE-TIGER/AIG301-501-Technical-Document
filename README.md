@@ -29,5 +29,6 @@
 4. [Setup AIG-301 as Child Device - Symmentric Key](./documents/Setup%20AIG-301%20as%20Child%20Device%20-%20Symmetric%20Key.md)
 
 ### Azure IoT Edge
-1. [Diagnosis] [Deploy an Azure IoT Edge Module for Diagnosis](./documents/Diagnosis%20Azure%20IoT%20Edge%20Module.md)
-2. [3'rd Module] [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
+1. [thingspro-agent Release & Configuration](./documents/thingspro-agent%20Release%20&%20Configuration.md)
+2. [Diagnosis] [Deploy an Azure IoT Edge Module for Diagnosis](./documents/Diagnosis%20Azure%20IoT%20Edge%20Module.md)
+3. [3'rd Module] [Install Ignition Edge on AIG-301](./documents/Install%20Ignition%20Edge%20on%20AIG-301.md)
