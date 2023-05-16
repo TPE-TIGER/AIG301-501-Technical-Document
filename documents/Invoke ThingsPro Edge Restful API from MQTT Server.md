@@ -6,7 +6,7 @@ Document Version: V1.0
 
 | Version | Date       | Content           |
 | ------- | ---------- | ----------------- |
-| 1.0     | 2022-02-10 | document created. |
+| 1.1     | 2023-05-16 | add modbus comamnd. |
 
 
 
