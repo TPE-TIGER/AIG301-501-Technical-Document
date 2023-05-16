@@ -69,7 +69,7 @@ Now, you are ready to invoke ThingsPro Edge's Restful API on your cloud program.
 | ---- | ----------------------------- | ------------------------------------------------------------ |
 | 1    | path                          | The end point of ThingsPro Edge Restful API you would like to invoke |
 | 2    | method                        | The method name associated with the end point.               |
-| 3    | header - request-expired-time | The expiration time of this invocation. <br />UTC and ISO-8601 |
+| 3    | header - request-expired-time | The expiration time of this invocation. <br />UTC and ISO-8601. <br />MQTT client will skip request API if assigned "request-expired-time" is invalid.|
 | 4    | header - request-id           | The unique Id of this invocation. This Id will be append into API response content. |
 | 5    | requestBody                   | The payload of this Restful API if any.                      |
 
@@ -95,4 +95,29 @@ Below is payload example:
 | 2    | status     | Restful API execution result                |
 | 3    | payload    | Restful API execution output.<br />String.  |
 
-Note：MQTT client will skip request API if assigned "request-expired-time" is invalid.
+### 3. Control Slave Device from Cloud
+#### 3.1 Publish Write Tag API Request from Cloud Program
+Say there is one modbus tcp slave device, my_fan, connected with AIG device, and I would like to adjust it rpm (revolutions per minute) to 100.2. So, I can publish below message to **topic:/devices/1/request**.
+```
+{
+    "path": "/modbusmaster/operate/direct-write-tag",
+    "method": "PUT",
+    "headers": [
+        {
+            "request-expired-time": "2020-11-12 11:45:26"
+        },
+        {
+            "request-id": "1"
+        }
+    ],
+    "requestBody": {
+        "prvdName": "modbus_tcp_master",
+        "srcName": "my_fan",
+        "tagName": "rpm",
+        "dataType": "float",
+        "dataValue": 100.2
+    }
+}
+```
+#### 3.2 Receive Write Tag API Response on Cloud Program
+MQTT client then, transfer this request to Modbus Master, waiting execution result, and publish result into **topic:/devices/1/response**. Cloud Program shall subscribe this topic to receive API response.
