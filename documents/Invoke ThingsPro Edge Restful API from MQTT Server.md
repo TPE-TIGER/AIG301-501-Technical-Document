@@ -28,9 +28,9 @@ On ThingsPro Edge MQTT client setting page, you shall
 
 - Enable Invoke Device Restful API from MQTT Server
 
-- Define name of "Input Topic". MQTT client will receive message (API Request) on this topic.
+- Define name of "Input Topic". MQTT client will receive message (API Request) from this topic.
 
-- Define name of "Out Topic". MQTT client will send out message (API Response) on this topic.
+- Define name of "Out Topic". MQTT client will send out message (API Response) to this topic.
 
   
 <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/mqtt/mqtt-dm.jpg" width="960" /></p>
