@@ -95,4 +95,4 @@ Below is payload example:
 | 2    | status     | Restful API execution result                |
 | 3    | payload    | Restful API execution output.<br />String.  |
 
-Note：MQTT client will skip request API if assigned "request-expired-time" is valid.
+Note：MQTT client will skip request API if assigned "request-expired-time" is invalid.
