@@ -41,8 +41,8 @@ On ThingsPro Edge MQTT client setting page, you shall
    <p align="center" width="100%"><img src="https://thingspro.blob.core.windows.net/resource/document/mqtt/mqtt-dm2.jpg" width="640" /></p>
 
 
-
-### 2. Publish API Request from Cloud Program
+### 2. Device Configuration from Cloud
+#### 2.1 Publish API Request from Cloud Program
 
 Now, you are ready to invoke ThingsPro Edge's Restful API on your cloud program. For example, publish below message to **topic:/devices/1/request** will turn on device's SSH service. 
 
@@ -75,7 +75,7 @@ Now, you are ready to invoke ThingsPro Edge's Restful API on your cloud program.
 
 
 
-### 2. Receive API Response on Cloud Program 
+#### 2.2 Receive API Response on Cloud Program
 
 MQTT client executes the request and publish result into **topic:/devices/1/response**. Cloud Program shall subscribe this topic to receive API response.
 
