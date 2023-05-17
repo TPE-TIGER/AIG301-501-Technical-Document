@@ -114,10 +114,13 @@ Say there is one modbus tcp slave device, my_fan, connected with AIG device, and
         "prvdName": "modbus_tcp_master",
         "srcName": "my_fan",
         "tagName": "rpm",
-        "dataType": "float",
-        "dataValue": 100.2
+        "dataType": "int16",
+        "dataValue": 100
     }
 }
 ```
 #### 3.2 Receive Write Tag API Response on Cloud Program
 MQTT client then, transfer this request to Modbus Master, waiting execution result, and publish result into **topic:/devices/1/response**. Cloud Program shall subscribe this topic to receive API response.
+```
+{"request-id":1, "payload":{},"state":200}
+```
