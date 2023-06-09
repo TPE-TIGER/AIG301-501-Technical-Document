@@ -1,12 +1,12 @@
 # Setup AIG-301 as Child Device (Symmetric Key)
 
-Document Version: V1.0
+Document Version: V1.1
 
 ### Change Log
 
 | Version | Date       | Content           |
 | ------- | ---------- | ----------------- |
-| 1.0     | 2022-12-07 | document created. |
+| 1.1     | 2023-06-09 | add troubleshooting |
 
 ### 1. Architecture
 
