@@ -195,5 +195,21 @@ iotedge config apply
 
 ##### ![](https://thingspro.blob.core.windows.net/resource/document/E-ON/E-ON-2-aid-connect.JPG)
 
+### 5. Troubleshooting
+  You can monitor Azure IoT Edge / EdgeHub log by below command:
+  ```
+  docker logs edgeHub -f
+  ```
+#### 5.1 TLS handshake failed
+  "TLS handshake failed" means AIG-301 can't verify the X.509 certificate which sent from Azure IoT Edge / EdgeHub. It cloud be one or some below reasones:
+  - The Subject CN value doesn't match GatewayHostName
+  - The X.509 certificate expired
+  - AIG-301 trusted Root CA fails on the X.509 certificae validataion
+  - You import wrong trusted Root CA for AIG-301
 
+#### 5.2 Unable to authenticate client xxx with cached service identity xxx (Found: False)
+  xxx is the child device ID.
+  
+  This error means that the device ID (xxx) is not be assigned as child device of Azure IoT Edge. You shall review and apply correct configuration on Azure IoT Hub.
+  
 
