@@ -151,7 +151,7 @@ iotedge config apply
 
   | Key               | Value                                                        | Desc                                                         |
   | ----------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-  | Connection String | HostName=TPE-TIGER.azure-devices.net;DeviceId=moxa-ivr-01;SharedAccessKey=r5ctNdN.....UUJ0=GatewayHostName=iot-gateway.thingspro.io | You shall change  Azure IoT Hub host.domain by your case     |
+  | Connection String | HostName=TPE-TIGER.azure-devices.net;DeviceId=moxa-ivr-01;SharedAccessKey=r5ctNdN.....UUJ0=;GatewayHostName=iot-gateway.thingspro.io | You shall change  Azure IoT Hub host.domain by your case     |
   | Trusted Root CA   | Import file: aieChain.crt                                    | Trusted Root CA be used to verify the X.509 certificate sending from iot-gateway.thingspro.io |
   
 - Save it to start Azure IoT Device.
