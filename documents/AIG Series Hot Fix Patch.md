@@ -16,7 +16,7 @@ Document Version: 1.1
 | ------------------------ | ------------------------------------------------------------ |
 | Issue Solved             | Device Model name displayed "Unknown" after run "apt upgrade" command |
 | Date                     | 2023-06-26                                                   |
-| Download URL             | https://tpe2.azureedge.net/HotFix/device_2.3.0-4612_armhf.deb |
+| Download URL             | https://tpe2.thingspro.io/tpe2/HotFix/device_2.3.0-4612_armhf.deb |
 | Tested Devices & Version | AIG-301 1.4                                                  |
 | Known Issue              | None                                                         |
 | Installation Step        | 1. Download deb file from above link.<br />2. SSH login to AIG device.<br />3. Switch as su or root<br />4. Run command: dpkg -i device_2.3.0-4612_armhf.deb |
@@ -30,7 +30,7 @@ Document Version: 1.1
 | ------------------------ | ------------------------------------------------------------ |
 | Issue Solved             | Admin Web UI can't display correctly when PC/Laptop without Internet access. |
 | Date                     | 2023-05-17                                                   |
-| Download URL             | https://tpe2.azureedge.net/HotFix/edge-web_1.40.42-6517_armhf.mpkg |
+| Download URL             | https://tpe2.thingspro.io/tpe2/HotFix/edge-web_1.40.42-6517_armhf.mpkg |
 | Tested Devices & Version | AIG-301 1.4                                                  |
 | Known Issue              | The map diagram can't display.                               |
 | Installation Step        | 1. Download mpkg file from above link.<br />2. SSH login to AIG device.<br />3. Switch as su or root<br />4. Run command: appman app install edge-web_1.40.42-6517_armhf.mpkg |
