@@ -8,12 +8,26 @@ Document Version: 1.1
 | ------- | ---------- | ------------------------------- |
 | 1.0     | 2022-08-05 | Content Created                 |
 | 1.1     | 2022-09-22 | Add AIG-301 V1.4 & AIG-501 V1.2 |
+| 1.2     | 2023-08-31 | Add AIG-301 V1.5                |
 
 
 
 # AIG-300 Series
 
 ### 
+
+Important notice: Please read the release note and upgrade note, and make sure to execute local test before deploying the upgrade to the remote units.
+
+### Upgrade to AIG-301 version 1.5
+
+**Pre-request：AIG-301 version 1.4**
+
+|      | Description                                 | OTA URL                                                      |
+| ---- | ------------------------------------------- | ------------------------------------------------------------ |
+| 1    | Upgrade pack for AIG-301 (IMG 1.4 to 1.5) | https://files.thingsprocloud.com/package/Upgrade_AIG-301_2.4.0-4020_IMG_1.4_to_1.5.deb.yaml |
+
+- Release note: https://files.thingsprocloud.com/package/AIG_301_v1.5_ReleaseNotes_final.pdf
+- Upgrade note: https://files.thingsprocloud.com/package/AIG_301_v1.5_UpgradeNotes_final.pdf
 
 ### Upgrade to AIG-301 version 1.4
 
