@@ -1,14 +1,17 @@
 # Connect "ThingsPro Edge inside" Gateway to your OpenVPN Server
 
-Document Version: 1.0
+Document Version: 1.1
 
 ### Change Log
 
-| Version | Date       | Content           |
-| ------- | ---------- | ----------------- |
-| 1.0     | 2022-03-21 | document created. |
+| Version | Date       | Content            |
+| ------- | ---------- | ------------------ |
+| 1.0     | 2022-03-21 | document created.  |
+| 1.1     | 2023-09-27 | update with notice |
 
 
+### Notice
+This document does **NOT SUPPORT** AIG-301 v1.5, AIG-501 v1.3, or any later versions. These versions officially support the OpenVPN client feature. For more information, please refer to: https://tpe-tiger.github.io/AIG301/V1.5/cloud/#.
 
 ### Purpose
 
@@ -138,7 +141,7 @@ Request Example:
 
 ```
 {
-	"enable": true,
+    "enable": true,
     "profile": "myclient.ovpn"   
 }
 ```
