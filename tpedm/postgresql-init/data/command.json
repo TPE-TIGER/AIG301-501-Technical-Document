@@ -1,0 +1,262 @@
+{
+    "category": [
+        {
+            "name": "Software Management",
+            "operation": [
+                {
+                    "name": "GET all /upgrades",
+                    "command": {"path": "/upgrades","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET one /upgrades",
+                    "command": {"path": "/upgrades/{id}","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "DELETE one /upgrades",
+                    "command": {"path": "/upgrades/{id}","method": "DELETE","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "POST one /upgrades",
+                    "command": {"path": "/upgrades","method": "POST","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"deleteFileAfterInstallComplete": true,"install": true,"url": ""}}
+                },
+		{
+                    "name": "PUT one /upgrades",
+                    "command": {"path": "/upgrades/{id}/{action}","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET upgrade configuration",
+                    "command": {"path": "/system/upgrade","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET upgrade configuration",
+                    "command": {"path": "/system/upgrade","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"allowOverCellular": true,"enableClientAuth": false,"enableSnapshot": false,"retryCount": 0,"retryInterval": 0,"targetDiskName": "string"}}
+                }
+            ]
+        },
+        {
+            "name": "Application Management",
+            "operation": [
+                {
+                    "name": "GET all /apps",
+                    "command": {"path": "/apps","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET one /apps",
+                    "command": {"path": "/apps/{appname}","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Start one /apps",
+                    "command": {"path": "/apps/{appname}/start","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Stop one /apps",
+                    "command": {"path": "/apps/{appname}/stop","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Restart one /apps",
+                    "command": {"path": "/apps/{appname}/restart","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Uninstall one /apps",
+                    "command": {"path": "/apps/{appname}/uninstall","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                }
+            ]
+        },
+        {
+            "name": "Device Maintenance",
+            "operation": [
+                {
+                    "name": "GET Reboot configuration",
+                    "command": {"path": "/system/reboot","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Reboot device now",
+                    "command": {"path": "/system/reboot","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"now": true}}
+                },
+                {
+                    "name": "Reboot device schudule - hours",
+                    "command": {"path": "/system/reboot","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"at": {"day": "1","dayOfWeek": "*","hour": "12","minute": "0","month": "1"},"enableScheduler": true}}
+                },
+                {
+                    "name": "GET Reset capability",
+                    "command": {"path": "/system/reset-default","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Reset to Factory Default",
+                    "command": {"path": "/system/reset-default?mode=factory","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Reset to System Default",
+                    "command": {"path": "/system/reset-default?mode=system&scopes=all","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                }
+            ]
+        },
+        {
+            "name": "Device Configuration",
+            "operation": [
+                {
+                    "name": "GET /system/httpserver",
+                    "command": {"path": "/system/httpserver","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET /system/httpserver",
+                    "command": {"path": "/system/httpserver","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"cert": "string","certFile": "string","certFilename": "string","httpEnable": true, "httpPort": 0, "httpsEnable": true,"httpsPort": 0,"key": "string","keyFile": "string","keyFilename": "string"}}
+                },
+                {
+                    "name": "GET /system/serialconsole",
+                    "command": {"path": "/system/serialconsole","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET /system/serialconsole",
+                    "command": {"path": "/system/serialconsole","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"enable": true}}
+                },
+                {
+                    "name": "GET /device/general",
+                    "command": {"path": "/device/general","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET /device/general",
+                    "command": {"path": "/device/general","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"hostName": "MyHost","description": "This is My Thingspro Edge."}}
+                },
+                {
+                    "name": "GET /device/time",
+                    "command": {"path": "/device/time","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET /device/time - time & timezone",
+                    "command": {"path": "/device/time","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"timezone": "Asia/Taipei","time": "2015-03-26T16:27:48+08:00"}}
+                },
+                {
+                    "name": "SET /device/time - NTP & GPS sync",
+                    "command": {"path": "/device/time","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"ntp": {"enable": true,"source": "timeserver","server": "tock.stdtime.gov.tw","gpsLongJump": true,"interval": 6000}}}
+                },
+                {
+                    "name": "GET /device/dns",
+                    "command": {"path": "/device/dns","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET /system/sshserver",
+                    "command": {"path": "/system/sshserver","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET /system/sshserver",
+                    "command": {"path": "/system/sshserver","method": "PUT","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"enable": true,"port": 22}}
+                },
+                {
+                    "name": "GET all /device/ethernets",
+                    "command": {"path": "/device/ethernets","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "Update one /device/ethernets - DHCP",
+                    "command": {"path": "/device/ethernets/{id}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"enable": true,"enableDhcp": true,"wan": true}}
+                },
+                {
+                    "name": "Update one /device/ethernets - static",
+                    "command": {"path": "/device/ethernets/{id}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"enable": true,"ip": "192.168.4.100","netmask": "255.255.255.0","gateway": "192.168.4.254","dns": ["1.1.1.1","2.2.2.2"],"enableDhcp": false,"wan": true}}
+                },
+                {
+                    "name": "GET all /device/serials",
+                    "command": {"path": "/device/serials","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET one /device/serials",
+                    "command": {"path": "/device/serials/{id}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"mode": "rs4852w","baudRate": 19200,"parity": "none","dataBits": 8,"stopBits": 1,"flowControl": "none"}}
+                },
+                {
+                    "name": "GET all /device/cellulars",
+                    "command": {"path": "/device/cellulars","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET one /device/cellulars - auto detect",
+                    "command": {"path": "/device/cellulars/{id}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"enable": true,"keepalive": {"intervalSec": 60,"enable": true,"targetHost": "8.8.8.8","reboot": {"enable": true,"intervalMin": 20}},"autoDetect": true,"profileTimeout": 120}}
+                },
+                {
+                    "name": "GET /device/gps",
+                    "command": {"path": "/device/gps","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET /device/gps - manual mode",
+                    "command": {"path": "/device/gps","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"mode": "manual","location": {"lat": 23.5,"lng": 121.2}}}
+                },
+                {
+                    "name": "SET /device/gps - auto mode",
+                    "command": {"path": "/device/gps","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"mode": "auto","interface": "/dev/ttyUSB0"}}
+                }
+            ]
+        },
+        {
+            "name": "Modbus Master",
+            "operation": [
+                {
+                    "name": "GET Modbus Master Overview",
+                    "command": {"path": "/modbusmaster/status/config/master-overview","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET Modbus TCP diagnose info",
+                    "command": {"path": "/modbusmaster/diagnose/tcp-status","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET Modbus Serial diagnose info",
+                    "command": {"path": "/modbusmaster/diagnose/serial-status","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET all Modbus TCP Interface",
+                    "command": {"path": "/modbusmaster/config/master-tcp-ifaces","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET one Modbus TCP Interface",
+                    "command": {"path": "/modbusmaster/config/master-tcp-ifaces/{masterTcpIfaceId}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"initialDelay": 0,"retryCount": 3,"responseTout": 1000}}
+                },
+                {
+                    "name": "GET all Modbus Serial Interface",
+                    "command": {"path": "/modbusmaster/config/master-ser-ifaces","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET one Modbus Serial Interface",
+                    "command": {"path": "/modbusmaster/config/master-ser-ifaces/{masterSerIfaceId}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"portValue": 0,"format": 0,"initialDelay": 0,"retryCount": 3,"responseTout": 1000,"frameInterval": 0,"charInterval": 0}}
+                },
+                {
+                    "name": "GET all Remote devices",
+                    "command": {"path": "/modbusmaster/config/remote-devs","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "GET one Remote device",
+                    "command": {"path": "/modbusmaster/config/remote-devs/{remoteDevId}","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "POST one Remote device - TCP",
+                    "command": {"path": "/modbusmaster/config/remote-devs","method": "POST","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"masterTcpIfaceId": 1,"name": "dev1","enable": 1,"slaveIpaddr": "0.0.0.0","slaveTcpPort": 502}}
+                },
+                {
+                    "name": "POST one Remote device - Serial",
+                    "command": {"path": "/modbusmaster/config/remote-devs","method": "POST","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"masterSerIfaceId": 1,"name": "dev1","enable": 1,"slaveId": 1}}
+                },
+                {
+                    "name": "POST one Remote device - with commands",
+                    "command": {"path": "/modbusmaster/config/remote-devs","method": "POST","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"masterTcpIfaceId": 1,"name": "dev1","enable": 1,"slaveIpaddr": "0.0.0.0","slaveTcpPort": 502,"mcmds": [{"name": "mcmd1","dataType": "raw","func": 3,"readQuantity": 10},{"name": "mcmd2","dataType": "raw","func": 3,"readQuantity": 10}]}}
+                },
+                {
+                    "name": "DELETE one Remote device",
+                    "command": {"path": "/modbusmaster/config/remote-devs/{remoteDevId}","method": "DELETE","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                },
+                {
+                    "name": "SET one Remote device - TCP",
+                    "command": {"path": "/modbusmaster/config/remote-devs/{remoteDevId}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"masterTcpIfaceId": 1,"name": "dev1","enable": 1,"slaveIpaddr": "0.0.0.0","slaveTcpPort": 502}}
+                },
+                {
+                    "name": "SET one Remote device - Serial",
+                    "command": {"path": "/modbusmaster/config/remote-devs/{remoteDevId}","method": "PATCH","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {"masterSerIfaceId": 1,"name": "dev1","enable": 1,"slaveId": 1}}
+                }
+            ]
+        },
+        {
+            "name": "Azure IoT Device",
+            "operation": [
+                {
+                    "name": "GET Azure IoT Device Configuration",
+                    "command": {"path": "/azure-device","method": "GET","headers": [{"request-expired-time": "{expired-time}"},{"request-id": "{request-id}"}],"requestBody": {}}
+                }
+            ]
+        }
+    ]
+}

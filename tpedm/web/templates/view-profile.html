@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/static/moxa/utility.js"></script>
+  <link rel="apple-touch-icon" sizes="76x76" href="/static/assets/img/apple-icon.png">
+  <link rel="icon" type="image/png" href="/static/assets/img/favicon.png">
+  <title>
+    TPE Devive Management
+  </title>
+  <!-- Fonts and icons -->
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900|Roboto+Slab:400,700" />
+  <!-- Nucleo Icons -->
+  <link href="/static/assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="/static/assets/css/nucleo-svg.css" rel="stylesheet" />
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+  <!-- CSS Files -->
+  <link id="pagestyle" href="/static/assets/css/material-dashboard.css?v=3.0.2" rel="stylesheet" />  
+</head>
+<body class="g-sidenav-show  bg-gray-200">
+  <aside
+    class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3   bg-gradient-dark"
+    id="sidenav-main">
+    <div class="sidenav-header">
+      <i class="fas fa-times p-3 cursor-pointer text-white opacity-5 position-absolute end-0 top-0 d-none d-xl-none"
+        aria-hidden="true" id="iconSidenav"></i>
+      <a class="navbar-brand m-0" href="/devices.html">
+        <img src="/static/assets/img/logo-ct.png" class="navbar-brand-img h-100" alt="main_logo">
+        <span class="ms-1 font-weight-bold text-white">TPE Device Management</span>
+      </a>
+    </div>
+    <hr class="horizontal light mt-0 mb-2">
+    <div class="collapse navbar-collapse  w-auto " id="sidenav-collapse-main">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link text-white active bg-gradient-primary" href="/devices.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">router</i>
+            </div>
+            <span class="nav-link-text ms-1">Device</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="/software-update.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">present_to_all</i>
+            </div>
+            <span class="nav-link-text ms-1">Software Update</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-white " href="/device-register.html">
+            <div class="text-white text-center me-2 d-flex align-items-center justify-content-center">
+              <i class="material-icons opacity-10">add_to_queue</i>
+            </div>
+            <span class="nav-link-text ms-1">Register</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <div class="container-fluid py-4">
+      <div class="row" id="div_device_header">
+        <div class="col-md-12 mb-lg-0 mb-4">
+          <div class="card mt-4">
+            <div class="card-body p-3">
+              <div class="row">
+                <div class="col-md-6 mb-md-0 mb-4">
+                  <div class="card card-body border card-plain border-radius-lg d-flex align-items-center flex-row">
+                    <img class="w-10 me-3 mb-0" id="device_profile_imageURL" src="/static/moxa/device-unknow.png" alt="logo">
+                    <h6 class="mb-0" id="device_profile_serial_number_h6"></h6>
+                    <i class="badge badge-sm bg-gradient-secondary ms-auto" id="device_profile_connection_status">Offline</i>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row" style="display: inline;" id="div_device_profile">
+        <div class="col-md-6 mt-4">
+          <div class="card">
+            <div class="card-header pb-0 px-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6 class="mb-0">Profile</h6>
+                </div>
+                <div class="col-md-6 d-flex justify-content-start justify-content-md-end align-items-center">
+                  <i class="material-icons me-2 text-lg">date_range</i>
+                  <small id="device_profile_updated_at"></small>
+                </div>
+              </div>
+            </div>
+            <div class="card-body pt-4 p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">General</h6>
+                    <span class="mb-2 text-xs">Host Name: <span
+                        class="text-dark ms-sm-2 font-weight-bold" id="device_profile_host_name"></span></span>
+                    <span class="mb-2 text-xs">Model Name: <span
+                        class="text-dark font-weight-bold ms-sm-2" id="device_profile_model_name"></span></span>
+                    <span class="mb-2 text-xs">Serial Number: <span
+                      class="text-dark ms-sm-2 font-weight-bold" id="device_profile_serial_number"></span></span>
+                    <span class="mb-2 text-xs">Firmware Version: <span
+                      class="text-dark ms-sm-2 font-weight-bold" id="device_profile_firmware_version"></span></span>
+                    <span class="mb-2 text-xs">BIOS Version: <span
+                      class="text-dark ms-sm-2 font-weight-bold" id="device_profile_bios_version"></span></span>
+                    <span class="mb-2 text-xs">ThingsPro Edge: <span
+                    class="text-dark ms-sm-2 font-weight-bold" id="device_profile_tpe_version"></span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <div class="card">
+            <div class="card-header pb-0 px-3">
+              <div class="row">
+                <div class="col-md-6">
+                  <h6 class="mb-0">Connection</h6>
+                </div>
+                <div class="col-md-6 d-flex justify-content-start justify-content-md-end align-items-center">
+                  <i class="material-icons me-2 text-lg">date_range</i>
+                  <small id="connection_updated_at"></small>
+                </div>
+              </div>
+            </div>
+            <div class="card-body pt-4 p-3">
+              <ul class="list-group">
+                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">MQTT Client Setting</h6>
+                    <span class="mb-2 text-xs">Client ID: <span
+                        class="text-dark ms-sm-2 font-weight-bold" id="connection_clientid"></span></span>
+                    <span class="mb-2 text-xs">User Name: <span
+                        class="text-dark font-weight-bold ms-sm-2" id="connection_username"></span></span>
+                    <span class="mb-2 text-xs">Protocol Name: <span
+                      class="text-dark font-weight-bold ms-sm-2" id="connection_proto_name"></span></span>
+                    <span class="mb-2 text-xs">Protocol Version: <span
+                      class="text-dark font-weight-bold ms-sm-2" id="connection_proto_ver"></span></span>
+                  </div>
+                </li>
+                <li class="list-group-item border-0 d-flex p-4 mb-2 bg-gray-100 border-radius-lg">
+                  <div class="d-flex flex-column">
+                    <h6 class="mb-3 text-sm">Connection Status</h6>
+                    <span class="mb-2 text-xs">Status: <span
+                        class="text-dark ms-sm-2 font-weight-bold" id="connection_status"></span></span>
+                    <span class="mb-2 text-xs">Connected At: <span
+                        class="text-dark font-weight-bold ms-sm-2" id="connected_at"></span></span>
+                    <span class="mb-2 text-xs">IP Address: <span
+                      class="text-dark font-weight-bold ms-sm-2" id="connected_ip_address"></span></span>
+                    <span class="mb-2 text-xs">Port: <span
+                      class="text-dark font-weight-bold ms-sm-2" id="connected_port"></span></span>
+                    <span class="mb-2 text-xs">Keep Alive: <span
+                      class="text-dark font-weight-bold ms-sm-2" id="connected_keep_alive"></span></span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer py-4  ">
+      <div class="container-fluid">
+        <div class="row align-items-center justify-content-lg-between">
+          <p class="mb-0">1. This page demostrates to get device's profile which persist on TPEDM database, and</p>
+          <p class="mb-0">2. request device's connection information from EMQX MQTT Broker.</p>
+
+          <!--
+            <div class="col-lg-6 mb-lg-0 mb-4">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+                © <script>
+                  document.write(new Date().getFullYear())
+                </script>,
+                made with <i class="fa fa-heart"></i> by
+                <a href="https://www.creative-tim.com" class="font-weight-bold" target="_blank">Creative Tim</a>
+                for a better web.
+              </div>
+            </div>
+            -->
+          <!--
+            <div class="col-lg-6">
+              <ul class="nav nav-footer justify-content-center justify-content-lg-end">
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com" class="nav-link text-muted" target="_blank">Creative Tim</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/presentation" class="nav-link text-muted" target="_blank">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/blog" class="nav-link text-muted" target="_blank">Blog</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://www.creative-tim.com/license" class="nav-link pe-0 text-muted" target="_blank">License</a>
+                </li>
+              </ul>
+            </div>
+            -->
+        </div>
+      </div>
+    </footer>
+    </div>
+  </main>
+  <div class="fixed-plugin">
+    <a class="fixed-plugin-button text-dark position-fixed px-3 py-2">
+      <i class="material-icons py-2">settings</i>
+    </a>
+    <div class="card shadow-lg">
+      <div class="card-header pb-0 pt-3">
+        <div class="float-start">
+          <h5 class="mt-3 mb-0">UI Style Configurator</h5>
+          <p>Customized your look and feel</p>
+        </div>
+        <div class="float-end mt-4">
+          <button class="btn btn-link text-dark p-0 fixed-plugin-close-button">
+            <i class="material-icons">clear</i>
+          </button>
+        </div>
+        <!-- End Toggle Button -->
+      </div>
+      <hr class="horizontal dark my-1">
+      <div class="card-body pt-sm-3 pt-0">
+        <!-- Sidebar Backgrounds -->
+        <div>
+          <h6 class="mb-0">Sidebar Colors</h6>
+        </div>
+        <a href="javascript:void(0)" class="switch-trigger background-color">
+          <div class="badge-colors my-2 text-start">
+            <span class="badge filter bg-gradient-primary active" data-color="primary"
+              onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-dark" data-color="dark" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-info" data-color="info" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-success" data-color="success" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-warning" data-color="warning" onclick="sidebarColor(this)"></span>
+            <span class="badge filter bg-gradient-danger" data-color="danger" onclick="sidebarColor(this)"></span>
+          </div>
+        </a>
+        <!-- Sidenav Type -->
+        <div class="mt-3">
+          <h6 class="mb-0">Sidenav Type</h6>
+          <p class="text-sm">Choose between 2 different sidenav types.</p>
+        </div>
+        <div class="d-flex">
+          <button class="btn bg-gradient-dark px-3 mb-2 active" data-class="bg-gradient-dark"
+            onclick="sidebarType(this)">Dark</button>
+          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-transparent"
+            onclick="sidebarType(this)">Transparent</button>
+          <button class="btn bg-gradient-dark px-3 mb-2 ms-2" data-class="bg-white"
+            onclick="sidebarType(this)">White</button>
+        </div>
+        <p class="text-sm d-xl-none d-block mt-2">You can change the sidenav type just on desktop view.</p>
+        <!-- Navbar Fixed -->
+        <!--
+        <div class="mt-3 d-flex">
+          <h6 class="mb-0">Navbar Fixed</h6>
+          <div class="form-check form-switch ps-0 ms-auto my-auto">
+            <input class="form-check-input mt-1 ms-auto" type="checkbox" id="navbarFixed" onclick="navbarFixed(this)">
+          </div>
+        </div>
+        -->
+        <hr class="horizontal dark my-3">
+        <div class="mt-2 d-flex">
+          <h6 class="mb-0">Light / Dark</h6>
+          <div class="form-check form-switch ps-0 ms-auto my-auto">
+            <input class="form-check-input mt-1 ms-auto" type="checkbox" id="dark-version" onclick="darkMode(this)">
+          </div>
+        </div>
+        <hr class="horizontal dark my-sm-4">
+      </div>
+    </div>
+  </div>
+  <!--   Core JS Files   -->
+  <script src="/static/assets/js/core/popper.min.js"></script>
+  <script src="/static/assets/js/core/bootstrap.min.js"></script>
+  <script src="/static/assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="/static/assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script>
+    var win = navigator.platform.indexOf('Win') > -1;
+    if (win && document.querySelector('#sidenav-scrollbar')) {
+      var options = {
+        damping: '0.5'
+      }
+      Scrollbar.init(document.querySelector('#sidenav-scrollbar'), options);
+    }
+  </script>
+  <!-- Github buttons -->
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+  <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+  <script src="/static/assets/js/material-dashboard.min.js?v=3.0.2"></script>
+</body>
+<script type="text/javascript">
+  var _clientid = "{{ clientid }}";  
+  
+  $(document).ready(function () {
+    Get_Device_Profile(_clientid);
+    Get_Device_Connection(_clientid);    
+  });
+
+  function Get_Device_Profile(clientid) {
+    $("body").css("cursor", "progress");
+    $.ajax({
+      type: "GET",
+      url: "/api/device/" + clientid,
+      data: null,
+      cache: false,
+      contentType: "application/json",
+      processData: false,
+      success: function (data) {
+        result = $.parseJSON(decodeHtml(data));
+        Fill_Device_Profile(result["data"]);
+        $("body").css("cursor", "default");
+      },
+      error: function (XMLHttpRequest, ajaxOptions, thrownError) {
+        $("body").css("cursor", "default");
+        toastr["error"](thrownError);
+      }
+    });
+  }
+
+  function Fill_Device_Profile(deviceProfile) {
+    if (deviceProfile["profile_updated_at"] != null) {
+      $("#device_profile_updated_at").html("Last Updated: " + getTime(deviceProfile["profile_updated_at"]*1000));
+      if (deviceProfile["connection_status"]) {
+        $("#device_profile_connection_status").removeClass("bg-gradient-secondary");
+        $("#device_profile_connection_status").addClass("bg-gradient-success");
+        $("#device_profile_connection_status").html("Online")
+      } else {
+        $("#device_profile_connection_status").addClass("bg-gradient-secondary");
+        $("#device_profile_connection_status").removeClass("bg-gradient-success");
+        $("#device_profile_connection_status").html("Offline")
+      }    
+      $("#device_profile_host_name").html(deviceProfile["host_name"]);
+      $("#device_profile_model_name").html(deviceProfile["model_name"]);
+      $("#device_profile_serial_number_h6").html(deviceProfile["serial_number"]);
+      $("#device_profile_serial_number").html(deviceProfile["serial_number"]);
+      $("#device_profile_firmware_version").html(deviceProfile["firmware_version"]);
+      $("#device_profile_bios_version").html(deviceProfile["bios_version"]);
+      $("#device_profile_tpe_version").html(deviceProfile["tpe_version"]);
+      $("#device_profile_imageURL").attr("src","/static/moxa/device-" + deviceProfile["model_name"].substring(0,5) + ".png");
+    } else {
+      $("#device_profile_serial_number_h6").html("Unknow");
+    }
+  }
+
+  function Get_Device_Connection(clientid) {
+    $("body").css("cursor", "progress");
+    $.ajax({
+      type: "GET",
+      url: "/api/emqx/clients/" + clientid,
+      data: null,
+      cache: false,
+      contentType: "application/json",
+      processData: false,
+      success: function (data) {
+        result = $.parseJSON(decodeHtml(data));
+        Fill_Device_Connection(result["data"]["data"][0]);
+        $("body").css("cursor", "default");
+      },
+      error: function (XMLHttpRequest, ajaxOptions, thrownError) {
+        $("body").css("cursor", "default");
+        toastr["error"](thrownError);
+      }
+    });
+  }
+
+  function Fill_Device_Connection(deviceConnection) {
+    if (deviceConnection != null) {
+      $("#connection_updated_at").html("Last Updated: " + getTime(Date.now()));
+      $("#connection_clientid").html(deviceConnection["clientid"]);
+      $("#connection_username").html(deviceConnection["username"]);
+      $("#connection_proto_name").html(deviceConnection["proto_name"]);
+      $("#connection_proto_ver").html(deviceConnection["proto_ver"]);
+      $("#connection_status").html(deviceConnection["connected"]);
+      $("#connected_at").html(deviceConnection["connected_at"]);
+      $("#connected_ip_address").html(deviceConnection["ip_address"]);
+      $("#connected_port").html(deviceConnection["port"]);
+      $("#connected_keep_alive").html(deviceConnection["keepalive"]);
+    }    
+  }
+</script>
+</html>
