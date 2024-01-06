@@ -6,9 +6,7 @@ sudo apt-get update && sudo apt-get install git \
 && cd AIG301-501-Technical-Document/tpedm/ \
 && sudo mkdir -p certs/ssl/
  ```
- ```
-sudo mkdir -p certs/ssl/
- ```
+
 ## Step 2: Generate SSL Certificate and Private Key
 Generate a Self-Signed SSL Certificate and Private Key using OpenSSL.
 Run the following command to generate a self-signed SSL certificate and key under /certs/ssl/ directory
