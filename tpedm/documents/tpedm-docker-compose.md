@@ -21,12 +21,15 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout ./certs/ssl/pri
 set UID and GID in the shell before running docker-compose up. This approach ensures that the containers runs with the same user permissions as the host user, mitigating permission-related issues when accessing the mounted volume.
 
 ```
-sudo su \
-&& export UID=$(id -u) \
+sudo su
+```
+
+```
+export UID=$(id -u)
 export GID=$(id -g)
 ```
 ```
-sudo docker-compose up -d
+docker-compose up -d
 ```
 
 
