@@ -1,9 +1,12 @@
 # Getting started 
 ## Step1: Clone GitHub Repository
  ```
-sudo apt-get update && sudo apt-get install git
-sudo git clone https://github.com/abadar05/AIG301-501-Technical-Document.git
-cd AIG301-501-Technical-Document/tpedm/
+sudo apt-get update && sudo apt-get install git \
+&& sudo git clone https://github.com/abadar05/AIG301-501-Technical-Document.git \
+&& cd AIG301-501-Technical-Document/tpedm/ \
+&& sudo mkdir -p certs/ssl/
+ ```
+ ```
 sudo mkdir -p certs/ssl/
  ```
 ## Step 2: Generate SSL Certificate and Private Key
