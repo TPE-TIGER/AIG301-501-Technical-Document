@@ -35,7 +35,7 @@ sudo docker-compose up -d
 | --------------------------- | ---------------------------------------------------------------------- |
 | /tpedm/emqx                 | EMQX MQTT Broker and plug-in configuration which requires by TPEDM     |
 | /tpedm/web                  | TPEDM Web Application source code and configuration                    |
-| /tpedm/postgresql-init      | Postgresql Application source code data files and configuration        | 
+| /tpedm/postgresql-init      | Database initialization source code data files and configuration        | 
 | /tpedm/postgresql           | Postgresql directory created by docker-compose, mount container volume |                                         
 | /tpedm/certs/ssl            | Nginx self signed server certificate and private key                   |
 | /tpedm/documents            | Readme files for TPEDM                                                 |
