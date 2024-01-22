@@ -22,11 +22,14 @@ set UID and GID in the shell before running docker-compose up. This approach ens
 
 ```
 sudo su
+```
+
+```
 export UID=$(id -u)
 export GID=$(id -g)
 ```
 ```
-sudo docker-compose up -d
+docker-compose up -d
 ```
 
 

@@ -41,7 +41,7 @@ ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker
 The following new security features are included in docker-compose installation method:
 1. Placed Nginx reverse proxy server in front of dm-web container
 2. Enabled HTTPS (TLS/SSL) on Nginx, to protect communication between browser and web server.
-3. Removed 5432 port on host which associate with dm_database. Now database initialization python script converted into docker container associate with dm_database_init container communicates directly with dm_database by docker internal network adapter (dm_network). Therefore, no need to map database container port on host network. 
+3. Removed 5432 port on host which associate with dm_database. In addition, database initialization python script converted into docker container associate with dm_database_init container communicates directly with dm_database by docker internal network adapter (dm_network). Therefore, no need to map database container port on host network. 
 
 
 <h1 id="For Developers...">For Developers...</h1>
