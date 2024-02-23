@@ -1,0 +1,122 @@
+version: '3'
+
+networks:
+  dm_network:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.200.10/24
+
+services:
+    backend-database:
+        image: postgres:14.0
+        environment:
+           - POSTGRES_PASSWORD=admin@123
+        networks:
+           - dm_network
+        container_name: dm_database
+        restart: always
+        volumes:
+          - ./postgresql/data:/var/lib/postgresql/data
+        user: "${UID}:${GID}"
+        logging:
+          driver: "json-file"
+        healthcheck:
+          test: ["CMD-SHELL", "pg_isready"]
+          interval: 30s
+          timeout: 10s
+          retries: 3
+          
+    backend-database-init:
+        build:
+          context: ./postgresql-init
+          dockerfile: Dockerfile
+        image: dm_database_init:latest
+        networks:
+           - dm_network
+        container_name: dm_database_init
+        #restart: always
+        volumes:
+          - ./postgresql-init:/dm-postgresql
+        user: "${UID}:${GID}"
+        logging:
+          driver: "json-file"
+        depends_on:
+          backend-database:
+            condition: service_healthy        
+
+    backend-webserver:
+        build:
+          context: ./web
+          dockerfile: Dockerfile
+        image: dm_web:latest
+        environment:
+           - PYTHONUNBUFFERED=1
+        container_name: dm_web
+        networks:
+           - dm_network
+        ports:
+          - 80:80
+        restart: always
+        volumes:
+          - ./web:/dm-web
+        user: "${UID}:${GID}"
+        logging:
+          driver: "json-file"
+        healthcheck:
+          test: curl --fail http://localhost || exit 1
+          interval: 30s
+          timeout: 10s
+          retries: 3
+        depends_on:
+          backend-database-init:
+            condition: service_started
+
+    emqx:
+        image: emqx/emqx:4.4.1
+        networks:
+           - dm_network
+        ports:
+          - 1883:1883
+          - 8081:8081
+        container_name: dm_emqx
+        restart: always
+        volumes:
+          - ./emqx/etc:/opt/emqx/etc
+          - ./emqx/loaded_plugins:/opt/emqx/data/loaded_plugins
+        user: "${UID}:${GID}"
+        logging:
+          driver: "json-file"
+        healthcheck:
+          test: curl http://localhost:8081/status
+          interval: 30s
+          timeout: 10s
+          retries: 3
+        depends_on:
+          backend-database:
+            condition: service_started
+          backend-webserver:
+            condition: service_started
+          frontend-webserver:
+            condition: service_started
+
+    frontend-webserver:
+        image: nginx:latest
+        networks:
+           - dm_network
+        ports:
+          - "443:443"
+        container_name: dm_nginx
+        volumes:
+          - ./nginx.conf:/etc/nginx/nginx.conf:ro  # Mount custom Nginx config
+          - ./certs/ssl/certificate.crt:/etc/nginx/certificate.crt:ro
+          - ./certs/ssl/privatekey.key:/etc/nginx/privatekey.key:ro
+        user: "${UID}:${GID}"
+        healthcheck:
+           test: curl https://localhost:443 -k
+           interval: 30s
+           timeout: 10s
+           retries: 3
+        depends_on:
+           - backend-webserver
+           

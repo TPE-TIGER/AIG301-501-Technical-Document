@@ -33,80 +33,18 @@ ThingsPro Device Management (TPEDM) requires a Linux virtual machine with Docker
 | Debian 11.3.0             | 20.10.14, build a224086 or up to dated | 3.9+           |
 
 
+# Download and Install TPEDM
+
+1. <a href="https://github.com/abadar05/AIG301-501-Technical-Document/blob/main/tpedm/documents/tpedm-shell-script.md"> Install via shell script </a>
+2. <a href="https://github.com/abadar05/AIG301-501-Technical-Document/blob/main/tpedm/documents/tpedm-docker-compose.md"> Install via docker compose </a>
+
+The following new security features are included in docker-compose installation method:
+1. Placed Nginx reverse proxy server in front of dm-web container
+2. Enabled HTTPS (TLS/SSL) on Nginx, to protect communication between browser and web server.
+3. Removed 5432 port on host which associate with dm_database. In addition, database initialization python script converted into docker container associate with dm_database_init container communicates directly with dm_database by docker internal network adapter (dm_network). Therefore, no need to map database container port on host network. 
 
 
-# Download and Run Installation Script
-
-##### 1. Please make sure Docker engine installed before install TPEDM.
-
-```
-sudo su
-wget https://thingspro.blob.core.windows.net/tpe2/Python3/tpedm-install.sh
-chmod 755 tpedm-install.sh
-./tpedm-install.sh
-```
-
-
-
-##### 2. The TPEDM installation script create below folders.
-
-| Folder                 | Desc                                                         |
-| ---------------------- | ------------------------------------------------------------ |
-| /home/tpedm/emqx       | EMQX MQTT Broker and plug-in configuration which requires by TPEDM |
-| /home/tpedm/postgresql | Postgresql data files and configuration                      |
-| /home/tpedm/web        | TPEDM Web Application source code and configuration          |
-
-
-
-##### 3. The TPEDM installation script create below 3 docker containers.
-
-| Container Instance | Docker Image    | Port host:container | Docker network |
-| ------------------ | --------------- | ------------------- | -------------- |
-| dm_database        | postgres:14.0   | 5432:5432           | dm_network     |
-| dm_web             | dm_web:latest   | 80:80               | dm_network     |
-| dm_emqx            | emqx/emqx:4.4.1 | 1883:1883           | dm_network     |
-
-
-
-##### 4. Open Linux virtual machine firewall port (1883 and 80) to allow ThingsPro Edge devices and browser connection.
-
-
-
-##### 5. Open browser, connect to Linux virtual machine IP with port 80
-
-![](https://thingspro.blob.core.windows.net/resource/document/tpe/tpedm-devices.jpg)
-
-
-
-# Operation Tips...
-
-**Start / Stop EMQX**
-
-```
-docker start/stop dm_emqx
-```
-
-
-
-**Start/Stop Database**
-
-```
-docker start/stop dm_database
-```
-
-
-
-**Start/Stop Web App**
-
-```
-docker start/stop dm_web
-```
-
-
-
-
-
-# For Developers...
+<h1 id="For Developers...">For Developers...</h1>
 
 ##### License
 
