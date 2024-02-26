@@ -61,6 +61,14 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 # AIG-500 Series
 
+### Upgrade to AIG-501 version 1.3.0
+
+**Pre-request：AIG-501 version 1.2**
+
+|      | Description                                 | OTA URL                                                      |
+| ---- | ------------------------------------------- | ------------------------------------------------------------ |
+| 1    | Upgrade pack for AIG-501 (IMG 1.2 to 1.3.0) | https://files.thingsprocloud.com/package/Upgrade_AIG-501_2.4.0-4127_IMG_1.2_to_1.3.0.deb.yaml |
+
 ### Upgrade to AIG-501 version 1.2
 
 **Pre-request：AIG-501 version 1.1**
