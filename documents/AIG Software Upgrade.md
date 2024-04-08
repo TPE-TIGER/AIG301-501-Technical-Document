@@ -6,17 +6,24 @@ Document Version: 1.1
 
 | Version | Date       | Content                         |
 | ------- | ---------- | ------------------------------- |
-| 1.0     | 2022-08-05 | Content Created                 |
-| 1.1     | 2022-09-22 | Add AIG-301 V1.4 & AIG-501 V1.2 |
+| 1.3     | 2024-04-03 | Add security patch for AIG-301 V1.5 |
 | 1.2     | 2023-08-31 | Add AIG-301 V1.5                |
-
-
+| 1.1     | 2022-09-22 | Add AIG-301 V1.4 & AIG-501 V1.2 |
+| 1.0     | 2022-08-05 | Content Created                 |
 
 # AIG-300 Series
 
 ### 
 
 Important notice: Please read the release note and upgrade note, and make sure to execute local test before deploying the upgrade to the remote units.
+
+### Security patch for AIG-301 version 1.5
+
+**Pre-request：AIG-301 version 1.5**
+
+|      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
+| ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| 1    | Mar 27, 2024 | Security patch for AIG-301 v1.5 | [Release Notes](https://moxa-srs-prod-0-website-files-content.s3.us-west-2.amazonaws.com/package/S000001842/AIG-301+Series_moxa-aig-301-series-security-patch-firmware-v1.5.1.deb_Software+Release+History.pdf) | https://files.thingsprocloud.com/package/moxa-aig-301-series-includes-security-patch-firmware-v1.0.deb.yaml |
 
 ### Upgrade to AIG-301 version 1.5
 
