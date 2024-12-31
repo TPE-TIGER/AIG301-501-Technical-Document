@@ -30,7 +30,7 @@
 
   | AIG Series | IoT Edge Version | thingspro-agent version | Module URL                           | Create Option                                                |
   | ---------- | ---------------- | ----------------------- | ------------------------------------ | ------------------------------------------------------------ |
-  | 1.4         | 1.4.40           | 2.2.6                   | moxa2019/thingspro-agent:2.2.6-armhf | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
+  | 1.4         | 1.4.40           | 2.2.6                   | moxa2019/thingspro-agent:2.2.6-amd64 | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.3        | 1.4.20           | 2.2.4                   | moxa2019/thingspro-agent:2.2.4-amd64 | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.2        | 1.2.7            | 2.2.3                   | moxa2019/thingspro-agent:2.2.3-amd64 | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.1        | 1.1.4            | 2.2.3                   | moxa2019/thingspro-agent:2.2.3-amd64 | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |

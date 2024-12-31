@@ -20,7 +20,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-301 version 1.6
 
-**Pre-request：AIG-301 version 1.5 or 1.5.x**
+**Pre-request: AIG-301 version 1.5 or 1.5.x**
 
 |      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
 | ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
@@ -29,7 +29,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Security patch for AIG-301 version 1.5
 
-**Pre-request：AIG-301 version 1.5**
+**Pre-request: AIG-301 version 1.5**
 
 |      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
 | ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
@@ -38,7 +38,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-301 version 1.5
 
-**Pre-request：AIG-301 version 1.4**
+**Pre-request: AIG-301 version 1.4**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -49,7 +49,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-301 version 1.4
 
-**Pre-request：AIG-301 version 1.3**
+**Pre-request: AIG-301 version 1.3**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -58,7 +58,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-301 version 1.3
 
-**Pre-request：AIG-301 version 1.2**
+**Pre-request: AIG-301 version 1.2**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -69,7 +69,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-301 version 1.2
 
-**Pre-request：AIG-301 version 1.1**
+**Pre-request: AIG-301 version 1.1**
 
 |      | Description                               | OTA URL                                                      |
 | ---- | ----------------------------------------- | ------------------------------------------------------------ |
@@ -81,7 +81,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-501 version 1.4
 
-**Pre-request：AIG-301 version 1.3 or 1.3.x**
+**Pre-request: AIG-301 version 1.3 or 1.3.x**
 
 |      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
 | ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
@@ -89,7 +89,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-501 version 1.3.0
 
-**Pre-request：AIG-501 version 1.2**
+**Pre-request: AIG-501 version 1.2**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -97,7 +97,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-501 version 1.2
 
-**Pre-request：AIG-501 version 1.1**
+**Pre-request: AIG-501 version 1.1**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -106,7 +106,7 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 ### Upgrade to AIG-501 version 1.1
 
-**Pre-request：AIG-501 version 1.0**
+**Pre-request: AIG-501 version 1.0**
 
 |      | Description                                 | OTA URL                                                      |
 | ---- | ------------------------------------------- | ------------------------------------------------------------ |
@@ -137,15 +137,15 @@ Before upgrade software, you shall verify the dependency according to this docum
 
 There are couple methods to submit software upgrade command.
 
-##### Option 1：By ThingsPro Edge Admin Web (/General Operation/ Software Upgrade)
+##### Option 1: By ThingsPro Edge Admin Web (/General Operation/ Software Upgrade)
 
-##### Option 2：By ThingsPro Edge Restful API, https://docs.moxa.online/tpe/openapi/core#tag/upgrade
+##### Option 2: By ThingsPro Edge Restful API, https://docs.moxa.online/tpe/openapi/core#tag/upgrade
 
 ​	Step 1: Create upgrade job, https://docs.moxa.online/tpe/openapi/core#tag/upgrade/paths/~1upgrades/post
 
 ​	Step 2: Start the job, https://docs.moxa.online/tpe/openapi/core#tag/upgrade/paths/~1upgrades~1%7Bid%7D~1%7Baction%7D/put
 
-##### Option 3：By Azure IoT Hub Direct Method Command or AWS IoT Core Job
+##### Option 3: By Azure IoT Hub Direct Method Command or AWS IoT Core Job
 Refer to <a href="https://github.com/TPE-TIGER/AIG301-501-Technical-Document/blob/main/documents/Install-Upgrade%20ThingsPro%20Edge%20Application%20from%20Cloud.md">Install/Upgrade ThingsPro Edge Application from Cloud</a>.
 
 
