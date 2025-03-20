@@ -21,6 +21,9 @@
 2. [Connect "ThingsPro Edge inside" Gateway to your OpenVPN Server](./documents/Connect%20ThingsPro%20Edge%20inside%20Gateway%20to%20your%20OpenVPN%20Server.md)
 3. [Self Host ThingsPro Edge Device Management Application](./documents/TPEDM-guide.md)
 
+### Technical Notes
+1. [Add Custom Firewall Rules on AIG](./documents/Add-Custom-Firewall-Rules-on-AIG.md)
+
 ### Other
 1. [Event List](./documents/TPE2-EventList.md) 
 2. [Benchmark & Limitation](./documents/TPE2-Benchmark_Limitation.md) 
