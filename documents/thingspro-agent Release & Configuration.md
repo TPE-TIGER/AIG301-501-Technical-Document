@@ -6,6 +6,7 @@
 
   | Version | Date       | Content         |
   | ------- | ---------- | --------------- |
+  | 1.5     | 2025-07-07 | AIG-301 v1.7.   |
   | 1.4     | 2024-11-12 | AIG-301 v1.6 and AIG-501 v1.4. |
   | 1.3     | 2024-04-08 | AIG-301 v1.5 security patch and AIG-501 v1.3. |
   | 1.2     | 2023-09-26 | AIG-301 v1.5.   |
@@ -16,6 +17,7 @@
 
   | AIG Version | IoT Edge Version | thingspro-agent version | Module URL                           | Create Option                                                |
   | ----------- | ---------------- | ----------------------- | ------------------------------------ | ------------------------------------------------------------ |
+  | 1.7         | 1.4.40           | 2.2.6                   | moxa2019/thingspro-agent:2.2.6-armhf | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.6         | 1.4.40           | 2.2.6                   | moxa2019/thingspro-agent:2.2.6-armhf | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.5         | 1.4.10           | 2.2.5                   | moxa2019/thingspro-agent:2.2.5-armhf | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
   | 1.5         | 1.4.10           | 2.2.3                   | moxa2019/thingspro-agent:2.2.3-armhf | { "HostConfig": { "Binds": [ "/var/thingspro/apps/azureiotedge/data/setting/:/var/thingspro/cloud/setting/", "/run/:/host/run/", "/var/thingspro/data/:/var/thingspro/data/" ] } } |
