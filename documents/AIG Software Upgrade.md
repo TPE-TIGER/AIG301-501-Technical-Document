@@ -1,11 +1,12 @@
 # AIG Software Release & Upgrade
 
-Document Version: 1.1
+Document Version: 1.6
 
 ### Change Log
 
 | Version | Date       | Content                         |
 | ------- | ---------- | ------------------------------- |
+| 1.6     | 2025-11-17 | Add AIG-301 v1.8 & AIG-501 v1.5 |
 | 1.5     | 2025-07-07 | Add AIG-301 v1.7                |
 | 1.4     | 2024-12-30 | Add AIG-301 v1.6 & AIG-501 v1.4 |
 | 1.3     | 2024-04-03 | Add security patch for AIG-301 V1.5 |
@@ -18,6 +19,14 @@ Document Version: 1.1
 ### 
 
 Important notice: Please read the release note and upgrade note, and make sure to execute local test before deploying the upgrade to the remote units.
+
+### Upgrade to AIG-301 version 1.8
+
+**Pre-request: AIG-301 version 1.7 or 1.7.x**
+
+|      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
+| ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| 1    | Nov 10, 2025 | Upgrade pack for AIG-301 (IMG 1.7 to 1.8) | [Release Notes](./AIG%20Release%20Notes/AIG-301-v1.8.0.md) | https://files.thingsprocloud.com/package/Upgrade_AIG-301_2.6.0-4499_IMG_1.7.0_to_1.8.0.yaml |
 
 ### Upgrade to AIG-301 version 1.7
 
@@ -88,6 +97,14 @@ Important notice: Please read the release note and upgrade note, and make sure t
 
 
 # AIG-501 Series
+
+### Upgrade to AIG-501 version 1.5
+
+**Pre-request: AIG-301 version 1.4 or 1.4.x**
+
+|      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
+| ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| 1    | Nov 10, 2025 | Upgrade pack for AIG-501 (IMG 1.4 to 1.5) | [Release Notes](./AIG%20Release%20Notes/AIG-501-v1.5.0.md) | https://files.thingsprocloud.com/package/Upgrade_AIG-501_2.6.0-4499_IMG_1.4.0_to_1.5.0.yaml |
 
 ### Upgrade to AIG-501 version 1.4
 
