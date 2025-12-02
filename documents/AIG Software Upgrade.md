@@ -1,11 +1,12 @@
 # AIG Software Release & Upgrade
 
-Document Version: 1.6
+Document Version: 1.7
 
 ### Change Log
 
 | Version | Date       | Content                         |
 | ------- | ---------- | ------------------------------- |
+| 1.7     | 2025-12-02 | Add AIG-301 v1.8.1              |
 | 1.6     | 2025-11-17 | Add AIG-301 v1.8 & AIG-501 v1.5 |
 | 1.5     | 2025-07-07 | Add AIG-301 v1.7                |
 | 1.4     | 2024-12-30 | Add AIG-301 v1.6 & AIG-501 v1.4 |
@@ -19,6 +20,14 @@ Document Version: 1.6
 ### 
 
 Important notice: Please read the release note and upgrade note, and make sure to execute local test before deploying the upgrade to the remote units.
+
+### Patch for AIG-301 version 1.8.0
+
+**Pre-request: AIG-301 version 1.8.0**
+
+|      | Release Date | Description                                 | Release Notes | OTA URL                                                      |
+| ---- | ------------ | ------------------------------------------- | ------------- | ------------------------------------------------------------ |
+| 1    | Dec 01, 2025 | Patch for AIG-301 v1.8.0 | [Release Notes](./AIG%20Release%20Notes/AIG-301-v1.8.1.md) | https://files.moxa-srs.thingsprocloud.com/package/S000001842/7533c2df-47bd-434c-83b8-8ddfa22fa8cb/AIG-301_1.8.1-20251124_armhf.yaml |
 
 ### Upgrade to AIG-301 version 1.8
 
